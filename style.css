@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+.sub-heading{
+    color: var(--Secondary-Text, #C5C5C5);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 3rem;
+}
+
+.heading{
+    font-weight: 800;
+    line-height: 35.748px;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    background: var(--Blue-Gradient, linear-gradient(180deg, #5BADFF 0%, #1373D1 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.heading-no-3{
+    font-weight: 800;
+    line-height: 35.748px;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    background: var(--Blue-Gradient, linear-gradient(180deg, #5BADFF 0%, #1373D1 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background: #212121;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #C5C5C5;
+    border-radius: 10rem;
+}
+
+body{
+    background: var(--Background-Color, #161513);
+}
+
+section{
+    padding: 4rem 20%;
+}
+
+footer{
+    padding: 4rem 20%;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    left: 0; top: 0; right: 0;
+    padding: 4rem 20%;
+    background: #161513;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4.364px 16px -2.182px rgba(0, 0, 0, 0.10);
+    z-index: 1000;
+}
+
+.header .logo{
+    font-size: 3rem;
+    font-weight: 600;
+    background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header .navbar a{
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 3rem;
+    font-weight: 400;
+}
+
+.header .navbar a:hover,
+.header .navbar a.active{
+    color: #F95E2F;
+}
+
+#menu-bar{
+    font-size: 2.2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-bar:hover{
+    color: #F95E2F;
+}
+
+
+/* home desgin */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 130vh;
+    flex-wrap: wrap;
+}
+
+.home .home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .container .img{
+    justify-content: center;
+    display: flex;
+}
+
+.home .container .img img{
+    width: 30rem;
+    padding: 2rem;
+}
+
+.home .container .content{
+    text-align: center;
+}
+
+.home .container .content h1{
+    color: var(--Primary-Color, #FFF);
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 63.357px;
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.home .container .content h1 span{
+    background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 63.357px;
+    background-clip: text;
+}
+
+.home .container .content p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.36px;
+    color: var(--Secondary-Text, #C5C5C5);
+    margin: 2.5rem 0;
+}
+
+.home .container .content .btn-g{
+    padding-top: 2rem;
+    margin: 4rem 0;
+}
+
+.home .container .content .btn-g .btn{
+    color: var(--Primary-Color, #FFF);
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1.3rem 4rem;
+    border: .2rem solid #fff;
+    border-radius: 100rem;
+    margin: 1rem;
+}
+
+.home .container .content .btn-g .btn:hover{
+    background: #fff;
+    color: #333;
+}
+
+.home .container .content .btn-g .btn:nth-child(1){
+    background: #fff;
+    color: #333;
+}
+
+.home .container .content .btn-g .btn:nth-child(1):hover{
+    background: transparent;
+    color: #fff;
+}
+
+
+/* expe-icons design */
+.home .container .experience-icons{
+    margin: 2rem 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home .container .experience-icons a i{
+    font-size: 4rem;
+    padding: 2.5rem;
+    color: #F95E2F;
+    pointer-events: none;
+}
+
+
+/* .projects design */
+.projects{
+    padding-top: 5rem;
+}
+
+.projects .projects-container{
+    display: flex;
+    margin: 4rem 0;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.projects .projects-container .box{
+    background: #333;
+    border-radius: 2rem;
+}
+
+.projects .projects-container .box img{
+    width: 30rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.projects .projects-container .box .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.projects .projects-container .box .content .title a{
+    color: #C5C5C5;
+    font-size: 1rem;
+    text-decoration: underline;
+    padding: 1rem 0;
+}
+
+.projects .projects-container .box .content .title a:hover{
+    color: #fff;
+}
+
+.projects .projects-container .box .content .title h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: .2rem 0;
+    text-transform: uppercase;
+}
+
+.projects .projects-container .box .content .icon i{
+    font-size: 2.5rem;
+    color: #C5C5C5;
+    cursor: pointer;
+}
+
+.projects .projects-container .box .content .icon i:hover{
+    color: #fff;
+}
+
+
+/* parragraph design */
+.parragraph{
+    padding-top: 5rem;
+}
+
+.parragraph .box-container{
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.parragraph .box-container .b-content{
+    padding: 1rem 0;
+    margin: 3rem 0;
+}
+
+.parragraph .box-container .b-content p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: var(--Light-Grey, var(--Secondary-Color, #8491A0));
+    text-align: justify;
+}
+
+.parragraph .box-container .b-content .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parragraph .box-container .b-content .box h3{
+    font-size: 2rem;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+
+.parragraph .box-container .b-content .box i{
+    padding-right: 2rem;
+    color: #4098EE;
+    font-size: 2.5rem;
+}
+
+.parragraph .box-container .b-content .box .fa-google{
+    color: green;
+}
+
+.parragraph .box-container .b-content .box .fa-apple{
+    color: #fff;
+}
+
+.parragraph .box-container .b-content .box .fa-meta{
+    color: #4098EE;
+}
+
+.parragraph .box-container .b-content .box .date{
+    font-size: 1.2rem;
+    color: var(--Light-Grey, var(--Secondary-Color, #8491A0));
+}
+
+
+/* footer design */
+.contact{
+    background: #212121;
+    min-height: 20vh;
+    flex-wrap: wrap;
+}
+
+.contact .footer-container .f-content h2{
+    color: var(--Primary-Color, #FFF);
+    font-weight: 700;
+    letter-spacing: 0.471px;
+    font-size: 23.526px;
+    padding-bottom: 3rem;
+}
+
+.contact .footer-container .f-content p{
+    color: var(--Secondary-Text, #C5C5C5);
+    font-weight: 300;
+    letter-spacing: 0.282px;
+    font-size: 14.115px;
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+.contact .footer-container .f-content a{
+    color: var(--Secondary-Text, #C5C5C5);
+    font-weight: 500;
+    letter-spacing: 0.282px;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    letter-spacing: .1rem;
+    text-decoration: underline;
+}
+
+.contact .footer-container .f-content a i{
+    color: var(--Secondary-Text, #C5C5C5);
+    font-weight: 600;
+    letter-spacing: 0.282px;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    padding-right: 1rem;
+}
+
+.contact .footer-container .f-icons{
+    display: inline-block;
+    padding: 1rem 0;
+}
+
+.contact .footer-container .f-icons a i{
+    font-size: 2.5rem;
+    padding-right: 2rem;
+    margin-right: 2rem;
+    color: #fff;
+}
+
+.contact .footer-container .f-icons a i:hover{
+    color: #F95E2F;
+}
