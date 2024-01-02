@@ -11,6 +11,14 @@
     }
 }
 
+
+@media (max-width: 425px){
+    .home .container .content .btn-g{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 921px){
 
     .header #menu-bar{
