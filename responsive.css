@@ -13,9 +13,25 @@
 
 
 @media (max-width: 425px){
+    section{
+        padding: 2rem 3%;
+    }
+
+    footer{
+        padding: 2rem 3%;
+    }
+
+    .header{
+        padding: 2rem 3%;
+    }
+
     .home .container .content .btn-g{
         display: flex;
         flex-direction: column;
+    }
+
+    .projects .projects-container{
+        gap: 2rem;
     }
 }
 
